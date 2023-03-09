@@ -1,0 +1,128 @@
+@import url("variables.css");
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+body {
+  font-family: "General Sans", Courier, monospace;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* 
+                |- - px - -|
+    headeing    size     height     weight
+    H1          96       86         600
+    H2          48       64         700
+    H3          28       28         700
+    H4          20       32         600
+    H5          48       54         700
+
+ */
+
+h1 {
+  font-family: "Faktum", Courier, monospace;
+  font-weight: 600;
+  line-height: 86px;
+  font-size: 96px;
+}
+h2 {
+  font-family: "Faktum", Courier, monospace;
+  font-weight: 700;
+  line-height: 64px;
+  font-size: 48px;
+}
+
+h4 {
+  font-family: "Faktum", Courier, monospace;
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 20px;
+}
+h5 {
+  font-family: "Faktum", Courier, monospace;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: var(--color-white) !important;
+}
+.text-black {
+  color: var(--color-black) !important;
+}
+.text-violet {
+  color: var(--color-violet);
+}
+.text-blue {
+  color: var(--color-blue) !important;
+}
+.text-yellow {
+  color: var(--color-yellow);
+}
+.text-gray {
+  color: var(--color-gray);
+}
+
+.btn-dark-pill {
+  width: fit-content;
+}
+
+.btn-dark-pill > a {
+  color: var(--color-white);
+  padding: 8px 24px;
+  border-radius: 100vmax;
+  background-color: var(--color-black);
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+  
+}
+.btn-dark-pill > a:hover{
+  background-color: var(--color-white);
+  color: var(--color-black);
+  outline: 1px solid var(--color-black);
+}
+
+.link-hover > a,.link-hover select {
+  transition: all 0.3s ease;
+}
+.link-hover > a:hover, .link-hover select:hover {
+  color: var(--color-blue);
+}
+
+.btn-hover,
+.btn-hover a,
+.btn-hover-dark,
+.btn-hover-dark a {
+  transition: all 0.3s ease;
+}
+
+.btn-hover-dark:hover {
+  background-color: var(--color-white) !important;
+  outline: 1px solid var(--color-black) !important;
+}
+.btn-hover-dark:hover > a {
+  color: var(--color-black) !important;
+}
+
+.btn-hover-dark:hover img:only-of-type{
+  filter: invert(1);
+}
+
+.btn-hover:hover {
+  background-color: var(--color-black) !important;
+}
+.btn-hover:hover > a {
+  color: var(--color-white) !important;
+}

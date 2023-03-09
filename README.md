@@ -7,3 +7,4 @@
 Sr | Category | Task | Link
 -- | -------- | ---- | ----
 1  | Design   | Simple Personal Portfolio | [Task 2](Design-Task/Design_2_Simple_Personal_Portfolio/)
+2 | Design | Bytedance Landing Page (Responsive) | [Task 3](Design-Task/Design_3_Bytedance_Landing_Page/)
