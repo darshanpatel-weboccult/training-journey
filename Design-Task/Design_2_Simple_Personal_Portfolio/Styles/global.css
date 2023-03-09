@@ -1,0 +1,22 @@
+@import url("variables.css");
+
+
+.text-white{
+    color: var(--color-white);
+}
+
+.text-blue{
+    color: var(--color-blue);
+}
+
+.text-gray{
+    color: var(--color-gray);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.letter-spacing{
+    letter-spacing: 0.1em;
+}
