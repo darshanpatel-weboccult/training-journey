@@ -8,3 +8,4 @@ Sr | Category | Task | Link
 -- | -------- | ---- | ----
 1  | Design   | Simple Personal Portfolio | [Task 2](Design-Task/Design_2_Simple_Personal_Portfolio/)
 2 | Design | Bytelight Landing Page (Responsive) | [Task 3](Design-Task/Design_3_Bytelight_Landing_Page/)
+3 | Design | CSS Advance Concepts | [Task 4](Design-Task/Design_4_CSS_Advance_Concepts/)

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: min(100%, 920px);
+  margin: auto;
+}
+
+.content-task1,
+.content-task2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+h1 {
+  padding-block: 5px;
+}
+ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 5px;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  opacity: 0.5;
+  padding-block: 5px;
+  border-radius: 8px;
+  color: white;
+}
+
+.content-task1 li:nth-child(3n + 1) {
+  background-color: hotpink;
+}
+.content-task1 li:nth-child(3n + 2) {
+  background-color: blue;
+}
+.content-task1 li:nth-child(3n + 3) {
+  background-color: green;
+}
+
+.content-task2 li:nth-child(9n + 1),
+.content-task2 li:nth-child(9n + 2),
+.content-task2 li:nth-of-type(9n + 3) {
+  background-color: hotpink;
+}
+.content-task2 li:nth-child(9n + 4),
+.content-task2 li:nth-child(9n + 4) + li,
+.content-task2 li:nth-child(9n + 4) + li + li {
+  background-color: blue;
+}
+.content-task2 li:nth-child(9n + 7),
+.content-task2 li:nth-child(9n + 7) + li,
+.content-task2 li:nth-child(9n + 7) + li + li {
+  background-color: green;
+}
+
+
