@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Styles/global.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+      jQuery ??
+        document.write('<script src="Scripts/jquery-3.6.3.min.js"><\/script>');
+    </script>
+    <script src="Scripts/script.js"></script>
+    <!-- JQ PLUG IN -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css"
+    />
+
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <!-- JQ PLUG IN -->
+    <script src="Scripts/validations.js"></script>
+    <title>WIZZARD 2.0</title>
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <h1 class="text-center">jQuery Wizzard Form</h1>
+
+        <div class="container-form">
+          <div class="container-steps">
+            <p>1</p>
+            <div><span></span></div>
+            <p>2</p>
+            <div><span></span></div>
+            <p>3</p>
+          </div>
+
+          <div class="container-form-fields">
+            <form id="theForm" novalidate="false">
+              <div class="form-grid">
+                <label for="firstName"
+                  ><span>First Name:</span>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="firstName"
+                    placeholder="Enter The First Name..."
+                /></label>
+                <label for="lastName"
+                  ><span>Last Name:</span>
+                  <input
+                    type="text"
+                    name="lname"
+                    id="lastName"
+                    placeholder="Enter The Last Name..."
+                /></label>
+                <label for="gender"
+                  ><span>Gender:</span>
+                  <div class="gender-group">
+                    <input type="radio" value="male" name="gender" id="gMale" />
+                    <span>Male </span>
+                    <input
+                      type="radio"
+                      value="female"
+                      name="gender"
+                      id="gFemale"
+                    />
+                    <span>Female</span>
+                  </div>
+                </label>
+              </div>
+              <div class="form-grid hidden">
+                <label for="email"
+                  ><span>Email Id:</span>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter The Email Id..."
+                /></label>
+                <label for="contact"
+                  ><span>Contact No:</span>
+                  <input
+                    type="num"
+                    name="contact"
+                    id="contact"
+                    placeholder="Enter The Contact No..."
+                /></label>
+                <label for="dob"
+                  ><span>Date of Birth:</span>
+                  <input type="date" name="dob" id="dob"
+                /></label>
+              </div>
+              <div class="form-grid hidden">
+                <label for="sport"
+                  ><span>Favourite Sport:</span>
+                  <select name="sport" id="sport">
+                    <option value="cricket">cricket</option>
+                    <option value="football">football</option>
+                    <option value="vollyball">vollyball</option>
+                  </select></label
+                >
+                <label for="about"
+                  ><span>About Yourself:</span>
+                  <textarea rows="1" name="about" id="about"></textarea>
+                </label>
+                <label>
+                  <span></span>
+                  <div>
+                    <input type="checkbox" name="tos" id="tos" /><span
+                      >I Agree To <a href="#">Terms & Conditions</a></span
+                    >
+                  </div></label
+                >
+              </div>
+            </form>
+          </div>
+
+          <div class="container-actions">
+            <button type="button" id="btn_prev" class="btn invisible">
+              Previous
+            </button>
+            <div>
+              <button type="button" id="btn_cancel" class="btn invisible">
+                Cancel</button
+              ><button type="button" id="btn_next" class="btn">
+                Save & Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-table">
+      <div class="container-table">
+        <table id="jq_table">
+          <thead>
+            <tr>
+              <th>Sr</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Gender</th>
+              <th>Email Id</th>
+              <th>Contact No</th>
+              <th>DOB</th>
+              <th>Sport</th>
+              <th>About You</th>
+              <th>T & C</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="table_data"></tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

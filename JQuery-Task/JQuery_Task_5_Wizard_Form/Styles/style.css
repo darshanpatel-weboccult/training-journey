@@ -1,0 +1,161 @@
+h1 {
+  padding: 20px 0;
+}
+
+.container-steps {
+  display: flex;
+  align-items: center;
+}
+.container-steps p {
+  height: 30px;
+  aspect-ratio: 1;
+  color: darkblue;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  border: 0;
+  border-radius: 100%;
+}
+.container-steps div {
+  display: flex;
+  align-items: center;
+  width: calc((100% - 90px) / 2);
+  height: 5px;
+}
+.container-steps div span {
+  width: 0%;
+  display: inline-block;
+  background-color: darkblue;
+  height: 100%;
+}
+.container-steps .completed {
+  background-color: darkblue;
+  color: white;
+}
+.container-steps .completed-bar {
+  width: 100%;
+}
+
+.container-form-fields {
+  padding: 50px 100px;
+  min-height: 230px;
+}
+.container-form-fields .form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+  font-weight: 500;
+  font-size: 18px;
+}
+.container-form-fields .form-grid label {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+.container-form-fields .form-grid label > span {
+  width: 30%;
+  text-align: right;
+  display: inline-block;
+}
+.container-form-fields .form-grid label > label.error {
+  position: absolute;
+  top: 0;
+  width: fit-content;
+  right: -10px;
+  transform: translateX(100%);
+}
+label.error {
+  color: red;
+}
+label#tos-error {
+  width: fit-content;
+  margin-left: 5px;
+}
+.container-form-fields .form-grid input,
+.container-form-fields .form-grid textarea,
+.container-form-fields .form-grid select {
+  padding: 5px 10px;
+  width: 100%;
+}
+.container-form-fields .form-grid textarea {
+  resize: vertical;
+}
+.container-form-fields .form-grid div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.container-form-fields .form-grid div input {
+  height: 25px;
+  aspect-ratio: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 10px;
+}
+.container-form-fields .form-grid .gender-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container-form-fields .form-grid .gender-group input {
+  height: 25px;
+  aspect-ratio: 1;
+}
+
+.container-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-actions #btn_cancel {
+  margin-right: 5px;
+}
+.container-actions button {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid darkblue;
+  color: darkblue;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.4s ease, visibility 0s;
+  cursor: pointer;
+}
+.container-actions button:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.container-table {
+  padding-top: 50px;
+}
+.container-table table {
+  width: 100%;
+  padding-top: 20px;
+  border-collapse: collapse;
+}
+.container-table table td,
+.container-table table th {
+  border: 1px solid silver;
+  text-align: center;
+}
+.container-table table .btn-edit {
+  background-color: greenyellow;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.container-table table .btn-delete {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 5px 10px;
+}

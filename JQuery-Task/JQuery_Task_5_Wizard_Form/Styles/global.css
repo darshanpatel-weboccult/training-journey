@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+input, select, textarea {
+  accent-color: darkblue;
+}
+
+.wrapper {
+  width: min(100%, 750px);
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none !important;
+}

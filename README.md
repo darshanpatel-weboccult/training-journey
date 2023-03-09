@@ -13,3 +13,4 @@ Sr | Category | Task | Link
 5 | JQuery | Tab & Accordion | [Task 2](JQuery-Task/JQuery_Task_2_Tab_and_Accordion/)
 6 | JQuery | Image Slider | [Task 3](JQuery-Task/JQuery_Task_3_Slider/)
 7 | JQuery | Countdown & Stopwatch | [Task 4](JQuery-Task/JQuery_Task_4_Countdown_Stopwatch/)
+8 | JQuery | Wizard Form | [Task 5](JQuery-Task/JQuery_Task_5_Wizard_Form/)
