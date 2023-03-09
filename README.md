@@ -15,3 +15,4 @@ Sr | Category | Task | Link
 7 | JQuery | Countdown & Stopwatch | [Task 4](JQuery-Task/JQuery_Task_4_Countdown_Stopwatch/)
 8 | JQuery | Wizard Form | [Task 5](JQuery-Task/JQuery_Task_5_Wizard_Form/)
 9 | Angular | Calendar | [Task 2](Angular-Task/Angular_2_Calendar/)
+10 | Angular | Angular Wizard | [Task 3](Angular-Task/Angular_3_Angular_Wizard/)

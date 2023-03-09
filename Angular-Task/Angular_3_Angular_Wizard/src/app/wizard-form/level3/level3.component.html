@@ -1,0 +1,82 @@
+<form [formGroup]="form" class="container-form" #myForm>
+  <label for="sport">Favorite Sport:</label>
+  <span class="input-container">
+    <select
+      name="sport"
+      formControlName="sport"
+      [value]="formProvider.getField('sport')"
+      id="sport"
+    >
+      <option value="">Favorite Sport</option>
+      <option value="Cricket">Cricket</option>
+      <option value="VolleyBall">Volley Ball</option>
+      <option value="FootBall">Foot Ball</option>
+    </select>
+    <span
+      class="error"
+      *ngIf="form.get('sport')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+  </span>
+
+  <label for="about">About Yourself:</label>
+  <span class="input-container">
+    <textarea
+      name="about"
+      id="about"
+      formControlName="about"
+      [value]="formProvider.getField('about')"
+    ></textarea>
+    <span
+      class="error"
+      *ngIf="form.get('about')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+    <span
+      class="error"
+      *ngIf="form.get('about')?.hasError('minlength') && isValidating"
+    >
+      At Least 3 Characters are Required!
+    </span>
+    <span
+      class="error"
+      *ngIf="form.get('about')?.hasError('maxlength') && isValidating"
+    >
+      At Most 200 Characters are Allowed!
+    </span>
+  </span>
+
+  <label for="tnc"></label>
+  <span class="input-container">
+    <div>
+      <input
+        type="checkbox"
+        value="Agree"
+        name="tnc"
+        formControlName="tnc"
+        [checked]="formProvider.getField('tnc')"
+        id="tnc"
+      />
+      Agree To Our Terms & Conditions
+    </div>
+    <span
+      class="error"
+      *ngIf="form.get('tnc')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+  </span>
+</form>
+<div class="container-action">
+  <button [routerLink]="['/level2']">Previous</button>
+  <div>
+    <button *ngIf="tableProvider.isEdit()" (click)="handleCancel()">
+      Cancel
+    </button>
+    <button (click)="handleSubmit()">
+      {{ tableProvider.isEdit() ? "Update" : "Submit" }}
+    </button>
+  </div>
+</div>

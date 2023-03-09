@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+select,
+textarea {
+  accent-color: greenyellow;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+form {
+    width: 736px;
+    height: 255px;
+    place-items: center start;
+
+  }
+
+.wrapper {
+  width: min(1220px, 100%);
+  margin: auto;
+}

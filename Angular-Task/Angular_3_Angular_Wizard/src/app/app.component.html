@@ -1,0 +1,26 @@
+<header>
+  <div class="wrapper">
+    <div class="container-header">
+      <h1>Angular Form Wizard</h1>
+      <div class="container-levels">
+        <ul>
+          <li><a [routerLink]="['/level1']" [routerLinkActive]="'active'" >Step 1</a></li>
+          <li><a [routerLink]="['/level2']" [routerLinkActive]="'active'" >Step 2</a></li>
+          <li><a [routerLink]="['/level3']" [routerLinkActive]="'active'" >Step 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrapper">
+    <div class="container-section">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>
+
+<section>
+  <app-table-component></app-table-component>
+</section>

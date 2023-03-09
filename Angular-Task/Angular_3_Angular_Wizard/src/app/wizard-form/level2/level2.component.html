@@ -1,0 +1,74 @@
+<form [formGroup]="form" class="container-form">
+  <label for="email">Email Id:</label>
+  <span class="input-container">
+      <input
+        type="email"
+        [value]="formProvider.getField('email')"
+        formControlName="email"
+        name="email"
+        id="email"
+      />
+      <span
+      class="error"
+      *ngIf="form.get('email')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+      <span
+      class="error"
+      *ngIf="form.get('email')?.hasError('emailError') && isValidating"
+    >
+      Please Enter Valid Email.
+    </span>
+  </span>
+
+  <label for="contact">Contact No:</label>
+  <span class="input-container">
+      <input
+        type="tel"
+        [value]="formProvider.getField('contact')"
+        formControlName="contact"
+        name="contact"
+        id="contact"
+      />
+      <span
+      class="error"
+      *ngIf="form.get('contact')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+      <span
+      class="error"
+      *ngIf="(form.get('contact')?.hasError('phoneError')) && isValidating"
+    >
+      Please Enter valid Contact No.
+    </span>
+  </span>
+
+  <label for="dob">Date of Birth:</label>
+  <span class="input-container">
+      <input
+        type="date"
+        formControlName="dob"
+        [value]="formProvider.getField('dob')"
+        name="dob"
+        id="dob"
+      />
+      <span
+      class="error"
+      *ngIf="form.get('dob')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+      <span
+      class="error"
+      *ngIf="form.get('dob')?.hasError('dobError') && isValidating"
+    >
+      {{form.get('dob')?.getError('dobError').value}}
+    </span>
+  </span>
+</form>
+<div class="container-action">
+    <button [routerLink]="['/level1']" >Previous</button>
+    <button (click)="handleNext()" >Save & Next</button>
+</div>

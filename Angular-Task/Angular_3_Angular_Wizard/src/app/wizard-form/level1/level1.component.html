@@ -1,0 +1,89 @@
+<form [formGroup]="form" class="container-form">
+  <label for="firstName">FirstName:</label>
+  <span class="input-container">
+    <input
+      type="text"
+      [value]="formProvider.getField('firstName')"
+      formControlName="firstName"
+      name="firstName"
+      id="firstName"
+    />
+    <span
+      class="error"
+      *ngIf="form.get('firstName')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+    <span
+      class="error"
+      *ngIf="form.get('firstName')?.hasError('minlength') && isValidating"
+      >At Least 3 Characters Required!
+    </span>
+    <span
+      class="error"
+      *ngIf="form.get('firstName')?.hasError('maxlength') && isValidating"
+      >At Most 15 Characters Allowed!
+    </span>
+    
+  </span>
+
+  <label for="lastName">LastName:</label>
+  <span class="input-container">
+    <input
+      type="text"
+      [value]="formProvider.getField('lastName')"
+      formControlName="lastName"
+      name="lastName"
+      id="lastName"
+    />
+    <span
+      class="error"
+      *ngIf="form.get('lastName')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+    <span
+      class="error"
+      *ngIf="form.get('lastName')?.hasError('minlength') && isValidating"
+      >At Least 3 Characters Required!
+    </span>
+    <span
+      class="error"
+      *ngIf="form.get('lastName')?.hasError('maxlength') && isValidating"
+      >At Most 15 Characters Allowed!
+    </span>
+  </span>
+
+  <label for="gender">Gender:</label>
+  <div class="input-container">
+    <div class="gender-group">
+      <input
+        type="radio"
+        [checked]="formProvider.getField('gender') === 'Male'"
+        value="Male"
+        formControlName="gender"
+        name="gender"
+        id="genderM"
+      />
+      <span>Male</span>
+      <input
+        type="radio"
+        [checked]="formProvider.getField('gender') === 'Female'"
+        value="Female"
+        formControlName="gender"
+        name="gender"
+        id="genderF"
+      />
+      <span>Female</span>
+    </div>
+    <span
+      class="error"
+      *ngIf="form.get('gender')?.hasError('required') && isValidating"
+    >
+      This Field Is Mandatory.
+    </span>
+  </div>
+</form>
+<div class="container-action">
+  <button (click)="handleNext()">Save & Next</button>
+</div>

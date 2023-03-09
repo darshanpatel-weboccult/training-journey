@@ -1,0 +1,36 @@
+.container-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.container-levels {
+  padding: 10px;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    a {
+      background-color: darkblue;
+      display: inline-block;
+      padding: 10px 15px;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      pointer-events: none;
+    }
+
+    .active {
+      background-color: greenyellow;
+      color: black;
+    }
+  }
+}
+
+.container-section {
+  display: grid;
+  place-items: center;
+}
+
+

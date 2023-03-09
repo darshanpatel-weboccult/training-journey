@@ -1,0 +1,61 @@
+.container-form {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 15px;
+  label {
+    place-self: center end;
+  }
+  .gender-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .input-container{
+    width: 100%;
+    position: relative;
+
+    &> span{
+        position: absolute;
+        top: 0 ;
+        right: -10px;
+        color: red;
+        transform: translate(100%,25%);
+    }
+  }
+
+  input:not([type="radio"]) {
+    padding: 5px 10px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    width: 100%;
+
+  }
+
+  input[type="radio"] {
+    width: 20px;
+    aspect-ratio: 1;
+  }
+}
+
+.container-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  button {
+    padding: 8px 10px;
+    cursor: pointer;
+    background-color: darkblue;
+    border: 0;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 400ms ease;
+    &:hover {
+      background-color: greenyellow;
+      color: black;
+    }
+  }
+}

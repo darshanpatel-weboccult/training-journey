@@ -1,0 +1,34 @@
+<table>
+    <thead>
+      <tr>
+        <th>Sr</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>Email Id</th>
+        <th>Contact No</th>
+        <th>DOB</th>
+        <th>Favorite Sport</th>
+        <th>About</th>
+        <th>T & C</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of table, let i = index">
+        <td>{{i+1}}</td>
+        <td>{{row.firstName}}</td>
+        <td>{{row.lastName}}</td>
+        <td>{{row.gender}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.contact}}</td>
+        <td>{{row.dob}}</td>
+        <td>{{row.sport}}</td>
+        <td>{{row.about}}</td>
+        <td>{{row.tnc ? "Agree" : "Disagree"}}</td>
+        <td><button (click)="handleEdit(i)" >Edit</button></td>
+        <td><button class="btn-delete" (click)="tableProvider.deleteRow(i)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
