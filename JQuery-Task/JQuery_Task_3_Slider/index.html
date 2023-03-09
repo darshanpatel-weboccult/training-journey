@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+      window.jQuery ??
+        document.write('<script src="Scripts/jquery-3.6.3.min.js"><\/script>');
+    </script>
+    <script src="Scripts/script.js"></script>
+    <title>jQuery Slider (DHP)</title>
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <div class="content-slider">
+          <h1>SIMPLE JQUERY IMAGE SLIDER</h1>
+          <div class="view-wrapper">
+            <div class="content-frame">
+              <div class="image-flex" id="slides">
+                <div class="slide">
+                  <img
+                    class="img"
+                    src="Assets/Images/slider_image_1.jpg"
+                    alt="slider_image_1"
+                  />
+                  <h3>1. Beautiful Sunset</h3>
+                </div>
+                <div class="slide">
+                  <img
+                    class="img"
+                    src="Assets/Images/slider_image_2.jpg"
+                    alt="slider_image_2"
+                  />
+                  <h3>2. Snow Covered Mountains</h3>
+                </div>
+                <div class="slide">
+                  <img
+                    class="img"
+                    src="Assets/Images/slider_image_3.jpg"
+                    alt="slider_image_3"
+                  />
+                  <h3>3. Magical Sea Shore</h3>
+                </div>
+                <div class="slide">
+                  <img
+                    class="img"
+                    src="Assets/Images/slider_image_4.jpg"
+                    alt="slider_image_4"
+                  />
+                  <h3>4. Healing Sunrise</h3>
+                </div>
+              </div>
+            </div>
+            <button id="btnPrev">&#8678;</button>
+            <button id="btnNext">&#8680;</button>
+          </div>
+          <div class="content-image-navs" id="imgNavs"></div>
+          <button data-state="play" id="btnPlayPause">Pause</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

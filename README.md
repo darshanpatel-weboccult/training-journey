@@ -11,3 +11,4 @@ Sr | Category | Task | Link
 3 | Design | CSS Advance Concepts | [Task 4](Design-Task/Design_4_CSS_Advance_Concepts/)
 4 | Design | Hotel Landing Page | [Task 5](Design-Task/Design_5_Hotel_Landing_Page/)
 5 | JQuery | Tab & Accordion | [Task 2](JQuery-Task/JQuery_Task_2_Tab_and_Accordion/)
+6 | JQuery | Image Slider | [Task 3](JQuery-Task/JQuery_Task_3_Slider/)
