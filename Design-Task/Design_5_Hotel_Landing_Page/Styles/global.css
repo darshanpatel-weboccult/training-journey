@@ -1,0 +1,107 @@
+@import url("variables.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+
+/* For Logo */
+h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20.25px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+h2 {
+    font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+a:hover{
+    color: var(--text-orange);
+}
+
+.wrapper {
+  width: min(1140px, 90%);
+  margin: auto;
+}
+
+.text-white {
+  color: var(--white);
+}
+.text-gray {
+  color: var(--text-gray);
+}
+
+.text-black {
+  color: var(--black);
+}
+.text-gray-04 {
+  color: rgba(41, 41, 41, 0.4);
+}
+.font-500 {
+  font-weight: 500;
+}
+.font-600 {
+  font-weight: 600;
+}
+
+.lh-19 {
+  line-height: 19.36px;
+}
+.lh-28 {
+  line-height: 28px;
+}
+.lh-26 {
+  line-height: 26px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Animation */
+.hover-invert {
+  transition: all 0.3s ease;
+}
+.hover-invert:hover {
+  color: var(--text-orange);
+  background-color: var(--white);
+}
+.hover-invert-orange {
+  transition: all 0.3s ease;
+}
+.hover-invert-orange:hover {
+  color: var(--text-orange);
+  background-color: var(--white);
+}
