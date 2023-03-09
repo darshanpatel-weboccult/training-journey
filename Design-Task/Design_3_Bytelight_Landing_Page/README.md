@@ -1,4 +1,4 @@
-# Design Task 3: Bytedance Landing Page
+# Design Task 3: Bytelight Landing Page
 
 #### Task : Create Responsive Design From Following [Figma File](https://www.figma.com/file/VKeMOWFjpEV26Oc406kAPe/Bytelight---Landing-Page-freebie-(Community)-(Copy)?node-id=1%3A4746&t=UraDJD4BPH3NumnG-1).
 
