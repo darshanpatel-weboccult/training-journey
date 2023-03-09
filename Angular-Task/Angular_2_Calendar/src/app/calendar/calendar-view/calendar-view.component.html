@@ -1,0 +1,81 @@
+<header>
+  <div class="container-calendar-title">
+    <button (click)="prevMonth()"><</button>
+    <h2>{{ getTitle() | uppercase }}</h2>
+    <button (click)="nextMonth()">></button>
+  </div>
+</header>
+
+<section>
+  <div class="container-calendar">
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let week of month">
+          <td
+            *ngFor="let day of week"
+            [class.highlight]="doHighlight(day)"
+          >
+            {{ day === 0 ? "" : day }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div class="container-actions">
+    <button (click)="showToday()">Today</button>
+    <select
+      name="year"
+      id="selYear"
+      #yearSel
+      (change)="updateSearch('year', yearSel.value)"
+
+    >
+      <option
+        *ngFor="let year of yearsSpan"
+        [value]="year"
+        [selected]="CPS.getToday().year === year"
+      >
+        {{ year }}
+      </option>
+    </select>
+    <select
+      name="month"
+      id="selMonth"
+      #monthSel
+      (change)="updateSearch('month', monthSel.value)"
+
+    >
+      <option
+        *ngFor="let month of monthSpan"
+        [selected]="month === CPS.getToday().month"
+        [value]="month"
+      >
+        {{ CPS.getMonthName(month) }}
+      </option>
+    </select>
+    <select
+      name="date"
+      #dateSel
+      id="selDate"
+      (change)="updateSearch('day', dateSel.value)"
+    >
+      <option value="null">Date</option>
+      <option *ngFor="let day of CPS.getMonthDaysArray(searchDate.month, searchDate.year)" [value]="day">{{ day }}</option>
+    </select>
+    <button (click)="findDate()" >Find Date</button>
+  </div>
+</footer>
