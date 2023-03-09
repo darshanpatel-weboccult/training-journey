@@ -12,3 +12,4 @@ Sr | Category | Task | Link
 4 | Design | Hotel Landing Page | [Task 5](Design-Task/Design_5_Hotel_Landing_Page/)
 5 | JQuery | Tab & Accordion | [Task 2](JQuery-Task/JQuery_Task_2_Tab_and_Accordion/)
 6 | JQuery | Image Slider | [Task 3](JQuery-Task/JQuery_Task_3_Slider/)
+7 | JQuery | Countdown & Stopwatch | [Task 4](JQuery-Task/JQuery_Task_4_Countdown_Stopwatch/)

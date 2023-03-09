@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  width: min(1220px, 100%);
+  margin: auto;
+}
+.container-countdown {
+  border: 1px solid black;
+  padding: 2rem 3rem;
+  text-align: center;
+  margin-top: 1em;
+}
+.container-countdown h1 {
+  font-size: 2em;
+}
+.container-countdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+}
+
+.container-countdown table td {
+  border: 1px solid silver;
+}
+.container-countdown table tr {
+  height: 6em;
+  font-size: 1.5em;
+}
+.container-countdown table tr:nth-child(2) {
+  height: 4em;
+  color: silver;
+}
+.container-countdown table tr:nth-child(2) h1 {
+  font-weight: 400;
+}
+
+.container-countdown input {
+  width: 100%;
+  font-size: 2em;
+  text-indent: 0.5em;
+  margin-top: 1em;
+}
+.container-actions {
+  padding: 1em 0;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+.container-actions button {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn-hover-invert:hover {
+  filter: invert(1);
+}
+
+.btn-start {
+  color: green;
+  border: 1px solid green;
+}
+.btn-lap {
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+}
+.btn-stop {
+  color: red;
+  border: 1px solid red;
+}
+.btn-reset {
+  color: black;
+  border: 1px solid black;
+}
+.container-info {
+  text-transform: uppercase;
+  color: silver;
+}
+.info {
+  font-weight: 500;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.info-start {
+  color: green;
+  border-color: green;
+}
+.info-lap {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+.info-stop {
+  color: red;
+  border-color: red;
+}
+
+.lap{
+  font-size: 1.5em;
+  text-align: left;
+}
+.lap > span{
+  font-size: 0.5em;
+}
+
+@media screen and (max-width: 976px) {
+  .wrapper {
+    width: min(100%, 950px);
+  }
+  .container-countdown {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: min(100%, 720px);
+  }
+  .container-countdown {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .wrapper {
+    width: min(100%, 380px);
+  }
+  .container-countdown {
+    font-size: 27%;
+  }
+}
