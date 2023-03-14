@@ -1,0 +1,9 @@
+.container-main{
+    padding: 20px;
+    color: darkgoldenrod;
+}
+router-outlet:only-child::before{
+    content: "Home";
+    font-size: 2em;
+    font-weight: 600;
+}

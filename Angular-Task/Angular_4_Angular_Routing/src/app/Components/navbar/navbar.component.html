@@ -1,0 +1,101 @@
+<div class="navbar" >
+  <div class="wrapper">
+    <div class="container-navbar">
+      <h1 routerLink="/">WebOccult</h1>
+      <ul class="container-navs">
+        <li class="pos-relative" >
+          <a href="javascript:void(0)"
+          (click)="changeExpand('hrms')"
+            >HRMS
+            <img src="../../../assets/Images/arrow-down.png" alt="down_arr"
+          /></a>
+          <ul *ngIf="expand === 'hrms'" class="container-sub-navs" >
+            <li class="pos-relative">
+              <a (click)="doNavigate('time-tracker')"
+                >Time Tracker
+                <img
+                  src="../../../assets/Images/arrow-right.png"
+                  alt="down_arr"
+              /></a>
+              <ul class="container-popup-navs">
+                <li>
+                  <a (click)="doNavigate('time-tracker', 'time-log')">Time Log</a>
+                </li>
+                <li>
+                  <a (click)="doNavigate('time-tracker', 'time-sheet')">Time sheet</a>
+                </li>
+                <li>
+                  <a (click)="doNavigate('time-tracker', 'extra-staffing')"
+                    >Request Extra Staffing</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a (click)="doNavigate('company-policy')">Company Policy</a>
+            </li>
+            <li class="pos-relative">
+              <a (click)="doNavigate('leave-management')"
+                >Leave Management
+                <img
+                  src="../../../assets/Images/arrow-right.png"
+                  alt="down_arr"
+              /></a>
+              <ul class="container-popup-navs">
+                <li>
+                  <a (click)="doNavigate('leave-management', 'leaves')">Leaves</a>
+                </li>
+                <li>
+                  <a (click)="doNavigate('leave-management', 'leave-report')">Leave Report</a>
+                </li>
+              </ul>
+            </li>
+            <li class="pos-relative">
+              <a (click)="doNavigate('payroll')"
+                >Payroll
+                <img
+                  src="../../../assets/Images/arrow-right.png"
+                  alt="down_arr"
+              /></a>
+              <ul class="container-popup-navs">
+                <li>
+                  <a (click)="doNavigate('payroll', 'salary-slip')">Salary Slip</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a (click)="doNavigate('holiday-management')">Holiday Management</a>
+            </li>
+          </ul>
+        </li>
+        <li class="pos-relative" >
+          <a href="javascript:void(0)"
+          (click)="changeExpand('password')"
+            >Password Mgmt.
+            <img src="../../../assets/Images/arrow-down.png" alt="down_arr"
+          /></a>
+          <ul class="container-sub-navs" *ngIf="expand && expand === 'password'">
+            <li>
+              <a (click)="doNavigate('password-management')">Password Management</a>
+            </li>
+          </ul>
+        </li>
+        <li class="pos-relative" >
+          <a href="javascript:void(0)"
+          (click)="changeExpand('toggl')"
+            >Toggl
+            <img src="../../../assets/Images/arrow-down.png" alt="down_arr"
+          /></a>
+          <ul class="container-sub-navs" *ngIf="expand === 'toggl'">
+            <li>
+              <a (click)="doNavigate('toggl-report')">Toggl Report</a>
+            </li>
+            <li>
+              <a (click)="doNavigate('toggl-dashboard')">Toggl Dashboard</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<app-navbar [expand]="expand" (expandChange)="changeExpand($event)"></app-navbar>
+
+<div class="wrapper" (click)="changeExpand('')" >
+    <div class="container-main" >
+        <router-outlet></router-outlet>
+    </div>
+</div>

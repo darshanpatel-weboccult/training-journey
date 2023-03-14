@@ -16,3 +16,4 @@ Sr | Category | Task | Link
 8 | JQuery | Wizard Form | [Task 5](JQuery-Task/JQuery_Task_5_Wizard_Form/)
 9 | Angular | Calendar | [Task 2](Angular-Task/Angular_2_Calendar/)
 10 | Angular | Angular Wizard | [Task 3](Angular-Task/Angular_3_Angular_Wizard/)
+11 | Angular | Angular Routing | [Task 4](Angular-Task/Angular_4_Angular_Routing/)
