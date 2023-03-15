@@ -1,0 +1,6 @@
+<ul *ngIf="eligible.length > 0">
+    <li *ngFor="let item of eligible">
+        {{item.value}} 
+        <app-list [parent]="item.value" [level]="item.level+1" ></app-list>
+    </li>
+</ul>

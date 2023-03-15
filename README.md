@@ -17,3 +17,4 @@ Sr | Category | Task | Link
 9 | Angular | Calendar | [Task 2](Angular-Task/Angular_2_Calendar/)
 10 | Angular | Angular Wizard | [Task 3](Angular-Task/Angular_3_Angular_Wizard/)
 11 | Angular | Angular Routing | [Task 4](Angular-Task/Angular_4_Angular_Routing/)
+12 | Angular | Dynamic Menu Creation | [Task 5](Angular-Task/Angular_5_Dynamic_Menu_creation/)

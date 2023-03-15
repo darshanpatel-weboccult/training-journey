@@ -1,0 +1,11 @@
+<select name="" id="" (change)="handleChange($event.target)">
+  <option [value]="null">{{parent === null ? 'Select Child': 'None'}}</option>
+  <option *ngFor="let item of eligible" [value]="item.value">
+    {{ item.value }}
+  </option>
+</select>
+<app-select
+  *ngIf="children.length > 0 && selected !== null"
+  [level]="level + 1"
+  [parent]="selected"
+></app-select>
